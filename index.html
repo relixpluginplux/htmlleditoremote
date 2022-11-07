@@ -1,0 +1,266 @@
+</html>
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<title>https://t.me/htmlcoding_html_coding_free</title>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>HTML Editor</title>
+	</head>
+
+	<body bgcolor="#676868">
+
+		
+		
+		<style>
+
+*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+	#btn-mas{
+		display: none;
+	}
+	.container{
+		position: fixed;
+		bottom: 20px;
+		right: 20px;
+	}
+	.redes a, .icon-mas2{
+		display: block;
+		text-decoration: none;
+		background: #cc2b2b;
+		color: #fff;
+		width: 55px;
+		height: 55px;
+		line-height: 55px;
+		text-align: center;
+		border-radius: 50%;
+		box-shadow: 0px 1px 10px rgba(0,0,0,0.4);
+		transition: all 500ms ease;
+	}
+	.redes a:hover{
+		background: #fff;
+		color: #cc2b2b;
+	}
+	.redes a{
+		margin-bottom: 0px;
+		opacity: 0;
+		visibility: hidden;
+	}
+	#btn-mas:checked~ .redes a{
+		margin-bottom: 10px;
+		opacity: 1;
+		visibility: visible;
+	}
+	.icon-mas2{
+		cursor: pointer;
+		background: #f44141;
+		font-size: 23px;
+	}
+	#btn-mas:checked ~ .btn-mas .icon-mas2{
+		transform: rotate(137deg);
+		font-size: 25px;
+	}
+	
+
+			html
+			{
+				height: 100%;
+				padding: 0;
+				margin: 0;
+			}
+
+			body
+			{
+				display: flex;
+				flex-direction: column;
+				height: 100%;
+				padding: 0;
+				margin: 0;
+			}
+
+			textarea
+			{
+				padding: 10px;
+				resize: none;
+				width: calc( 100% - 20px );
+				height: 70%;
+				margin: 0;
+				border: 0;
+			}
+
+			textarea:focus
+			{
+				outline: none;
+			}
+
+			iframe
+			{
+				margin: 0;
+				border: 0;
+				height: 0%;
+			}
+
+			.controls
+			{
+				border-top   : 2px solid #7a0000;
+				
+				padding:18px;
+				white-space: nowrap;
+				overflow-x: auto;
+				min-height: 17px;
+				content:" ";
+    
+      
+     
+    
+			}
+
+			.controls a, .controls label
+			{
+				
+				text-decoration: none;
+				color: #ffffff;
+				user-select: none;
+				padding: 20px;
+				cursor: pointer;
+			}
+
+			.controls a:hover, .controls label:hover
+			{
+				
+				background: #fbff00;
+			}
+
+
+
+			.styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.styled:hover {
+    background-color: rgb(83, 83, 83);
+}
+
+.styled:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+
+
+
+				
+				
+				</style>
+
+
+
+<textarea id=data>
+<big><big><big><big><big><big><big><big><big><big><big><big><big>
+<h6 style="text-align:center";><span style="background-color:#000000;"> ♨️ </h6></big></big></big></big></big></big></big></big></big></big></big></big></big>
+<span>
+Reemplaza el emote por el que mas te guste. By ROBOTINA-ROBOTIN-PLUGIN STORE
+</span>
+</textarea>
+  
+		<div class=controls>
+		
+			<button  class="favorite styled">
+			<a href="https://t.me/YoRobotin" class="fab fa-telegram"> Contacto</a> |
+			<a href=# onClick="goFullscreen(false)">Pantalla Completa</a> |
+			<a href=# onClick="goFullscreen(true)" >Nueva Visualisacion</a> |
+			<a href="https://www.facebook.com/Plugin-Store-VPS-Bolivia-IP-USA-206686798042629/"
+			   target=_blank>facebook</a>
+
+			</button>
+		</div>
+		<iframe name=hello style="width: 100%; height: 100%"></iframe>
+
+		<script>
+
+			function update()
+			{
+				let outty = window.hello.document;
+				outty.open();
+				let inny=document.getElementById("data");
+				outty.write(inny.value);
+				outty.close();
+			};
+
+			function goFullscreen(newWin)
+			{
+				if (newWin) outWin= window.open()
+				else        outWin= window.open("about:blank","html_editor");
+				outWin.focus();
+				let outty = outWin.document;
+				outty.open();
+				let inny=document.getElementById("data");
+				outty.write(inny.value);
+				outty.close();
+			}
+
+			function realtime()
+			{
+				if (!document.querySelector("#realtime").checked) return;
+				update();
+			}
+
+			dataArea=document.getElementById("data");
+			dataArea.onkeyup=realtime;
+
+			update();
+
+		</script>
+
+	</body>
+
+
+	
+
+</head>
+
+<body>
+
+<div class="container">
+<input type="checkbox" id="btn-mas">
+<div class="redes">
+<a href="https://t.me/apkspersonalizadas" class="fab fa-telegram"></a>
+<a href="https://wa.me/message/X5SR6SW446RTD1" class="fab fa-whatsapp"></a>
+<a href="https://www.paypal.me/robotinapagos" class="fab fa-paypal"></a>
+<a href="https://www.facebook.com/Plugin-Store-VPS-Bolivia-IP-USA-206686798042629/" class="fab fa-facebook"></a>
+</div>
+
+<div class="btn-mas">
+
+<label for="btn-mas" class="icon-mas2"><b>+</b></label>
+
+</div>
+
+</body>
+
+
+
+</html>

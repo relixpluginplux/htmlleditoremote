@@ -89,7 +89,7 @@
 
 			textarea
 			{
-				padding: 10px;
+				padding: 1px;
 				resize: none;
 				width: calc( 100% - 20px );
 				height: 70%;
@@ -113,15 +113,7 @@
 			{
 				border-top   : 2px solid #7a0000;
 				
-				padding:18px;
 				white-space: nowrap;
-				overflow-x: auto;
-				min-height: 17px;
-				content:" ";
-    
-      
-     
-    
 			}
 
 			.controls a, .controls label
@@ -130,7 +122,7 @@
 				text-decoration: none;
 				color: #ffffff;
 				user-select: none;
-				padding: 20px;
+				padding: 10px;
 				cursor: pointer;
 			}
 
@@ -145,11 +137,11 @@
 			.styled {
     border: 0;
     line-height: 2.5;
-    padding: 0 20px;
+    padding: 0 10px;
     font-size: 1rem;
     text-align: center;
     color: #fff;
-    text-shadow: 1px 1px 1px #000;
+    text-shadow: 0px 0px 0px #000;
     border-radius: 10px;
     background-color: rgb(0, 0, 0);
     background-image: linear-gradient(to top left,
@@ -189,6 +181,8 @@ Reemplaza el emote por el que mas te guste. By ROBOTINA-ROBOTIN-PLUGIN STORE
 		<div class=controls>
 		
 			<button  class="favorite styled">
+				| 
+			<a href=# onClick="update()">Visualizar</a> |
 			<a href="https://t.me/YoRobotin" class="fab fa-telegram"> Contacto</a> |
 			<a href=# onClick="goFullscreen(false)">Pantalla Completa</a> |
 			<a href=# onClick="goFullscreen(true)" >Nueva Visualisacion</a> |
